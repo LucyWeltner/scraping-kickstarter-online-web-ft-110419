@@ -19,12 +19,10 @@ def create_project_hash
   project_hash = {}
   projects.each_with_index do |project,index| 
      title = titles_text[index].to_sym
-     p title
      project_hash[title] = {}
      project_hash[title][:percent_funded] = percents[index]
      project_hash[title][:location] = locations_text[index]
      project_hash[title][:description] = description[index]
-     p project_hash[title][:location]
   end
   p project_hash[0]
 end
