@@ -23,6 +23,7 @@ def create_project_hash
      project_hash[title][:percent_funded] = percents[index]
      project_hash[title][:location] = locations_text[index]
      project_hash[title][:description] = description[index]
+     project_hash[title][:image_link] = images
   end
   p project_hash
 end
