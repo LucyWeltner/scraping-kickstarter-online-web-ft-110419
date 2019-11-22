@@ -24,7 +24,7 @@ def create_project_hash
      project_hash[title][:location] = locations_text[index]
      project_hash[title][:description] = description[index]
   end
-  p project_hash[0]
+  p project_hash
 end
 
 
